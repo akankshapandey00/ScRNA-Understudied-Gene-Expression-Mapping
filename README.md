@@ -8,6 +8,18 @@ This repository contains an R Markdown workflow (`ExpressionPattern.Rmd`) that:
 - visualizes expression of a defined candidate gene list in each dataset,
 - integrates blood + testis using Seurat anchors and plots candidate genes on the integrated UMAP.
 
+## Data sources
+
+### Testis scRNA-seq
+- Source: NCBI Gene Expression Omnibus (GEO), Series **GSE112013** (“The Human Testis Cell Atlas via Single-cell RNA-seq”).
+- In this repo, the testis input corresponds to the processed UMI count table used in the workflow: `GSE112013_Combined_UMI_table.txt`. :contentReference[oaicite:0]{index=0}
+- Associated publication: Guo J. et al. **“The adult human testis transcriptional cell atlas.”** (PMID: 30315278). :contentReference[oaicite:1]{index=1}
+
+### Blood scRNA-seq
+- The blood input is provided as 10x Genomics / Cell Ranger–style matrix files:
+  `10x_v2_RNA_matrix.mtx`, `10x_v2_RNA_features.tsv`, `10x_v2_barcodes.tsv`.
+- The original download location / publication for the blood dataset is not documented in `ExpressionPattern.Rmd`. Add the specific source here once confirmed.
+
 ## Candidate genes
 Defined in the Rmd as:
 - C1orf174
