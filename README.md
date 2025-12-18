@@ -1,4 +1,4 @@
-# Expression pattern analysis (blood vs testis) — Seurat workflow
+# Expression pattern analysis of understudied genes— Seurat workflow
 
 This repository contains an R Markdown workflow (`ExpressionPattern.Rmd`) that:
 - loads a large 10x Genomics `.mtx` RNA count matrix (blood),
